@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React,{useState} from 'react';
 import './App.css';
+import userList from './data';
+import UserTable from './UserTable';
 
 function App() {
+  //state, data default diambil dari data.js
+  const [users, setUser] = useState(userList);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <div className="container">
+        <h1>React CRUD App with Hooks without Database</h1>
+        <div className="row">
+            <div className="five columns">
+              <h2>Add user</h2>
+            </div>
+            <div className="seven columns">
+              <h2>View users</h2>
+              <UserTable users={users} />
+            </div>
+
+        </div>
+     </div>
   );
 }
 
