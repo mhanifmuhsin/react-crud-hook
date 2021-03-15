@@ -13,20 +13,19 @@ const UserTable = (props) => {
             </thead>
 
             <tbody>
-                {/* cek data terlebih dahulu */}
                 {props.users.length > 0 ? (
                     // jika ada lakukan ini
                     props.users.map(user => {
                         // destruktur
                         const { id, name, username } = user;
                         return (
-                            <tr>
+                            <tr key={id}>
                                 <td>{id}</td>
                                 <td>{name}</td>
                                 <td>{username}</td>
                                 <td>
-                                    <button>Delete</button>
-                                    <button>Edit</button>
+                                    <button onClick={() => props.deleteUser(id)}>Delete</button>
+                                    <button onClick={() => props.editUser(id,user)}>Edit</button>
                                 </td>
                             </tr>
                         )
