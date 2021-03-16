@@ -9,6 +9,7 @@ function App() {
   //state, data default diambil dari data.js
   const [users, setUsers] = useState(userList);
 
+  // add user
   const addUser = user => {
     user.id = users.length + 1;
     setUsers([...users, user]);

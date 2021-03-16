@@ -15,7 +15,7 @@ const EditUserForm = (props) => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        if (user.name && user.username) props.updateUser(user);
+        if (user.name && user.username && user.email) props.updateUser(user);
     }
     return (
         <form>
@@ -23,6 +23,8 @@ const EditUserForm = (props) => {
             <input className="u-full-width" type="text" value={user.name} name="name" onChange={handleChange} />
             <label>Username</label>
             <input className="u-full-width" type="text" value={user.username} name="username" onChange={handleChange} />
+            <label>Email</label>
+            <input className="u-full-width" type="email" name="email" value={user.email} onChange={handleChange}/>
             <button className="button-primary" type="submit" onClick={handleSubmit} >Edit user</button>
             <button type="submit" onClick={() => props.setEditing(false)} >Cancel</button>
         </form>

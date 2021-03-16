@@ -4,18 +4,21 @@ const userList =[
     {
         id:1,
         name: 'Dimas Maryanto',
-        username: 'dimas'
+        username: 'dimas',
+        email: 'dimmaryanto@gmail.com'
         
     },
     {
         id:2,
         name: 'Riansyah PP',
-        username: 'rian'
+        username: 'rian',
+        email: 'rianpp@gmail.com'
     },
     {
         id:3,
         name: 'Muhamad Hanif Muhsin',
-        username: 'mhanifmuhsin'
+        username: 'mhanifmuhsin',
+        email: 'm.hanif.muhsin@gmail.com'
     },
     
 ]
