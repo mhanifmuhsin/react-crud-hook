@@ -13,6 +13,7 @@ const AddUserFrom = (props) => {
         if (user.name && user.username && user.email) {
             handleChange(e, props.addUser(user));
         }
+        setUser(initUser);
     }
     return (
         <form>
