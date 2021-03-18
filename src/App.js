@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import AddUserForm from './AddUserForm';
 import EditUserForm from './EditUserForm';
-import './App.css';
 import userList from './data';
 import UserTable from './UserTable';
 
