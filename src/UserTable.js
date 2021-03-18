@@ -23,7 +23,7 @@ const UserTable = (props) => {
                     props.users.map(user => {
                         // destruktur
                         const { id, name, username, email, division, gender, message, sendcopy } = user;
-                        console.log(user.name, user.sendcopy)
+                        // console.log(user.name, user.sendcopy)
                         return (
                             <tr key={id}>
                                 <td>{id}</td>
