@@ -39,34 +39,33 @@ function App() {
   };
 
   return (
+    <div>
     <div className="container">
       <h1>React CRUD App with Hooks without Database</h1>
       <div className="row">
-        <div className="five columns">
-          {editing ? (
-            <div>
-              <h2>Edit user</h2>
-              <EditUserForm
-                currentUser={currentUser}
-                setEditing={setEditing}
-                updateUser={updateUser}
-              />
-            </div>
-          ) : (
-            <div>
-              <h2>Add user</h2>
-              <AddUserForm addUser={addUser} />
-            </div>
-          )}
-        </div>
-        <div className="seven columns">
-          <h2>View users</h2>
-          <UserTable users={users} deleteUser={deleteUser} editUser={editUser} />
-        </div>
+        {editing ? (
+          <div>
+            <EditUserForm
+              currentUser={currentUser}
+              setEditing={setEditing}
+              updateUser={updateUser}
+            />
+          </div>
+        ) : (
+          <div>
+            <AddUserForm addUser={addUser} />
+          </div>
+        )}
 
       </div>
+         
     </div>
-
+    
+    <div style={{ display:'flex', justifyContent: 'center' }}>
+          
+          <UserTable users={users} deleteUser={deleteUser} editUser={editUser} />
+        </div>
+        </div>
 
   );
 };
