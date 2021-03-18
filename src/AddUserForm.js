@@ -11,7 +11,7 @@ const AddUserFrom = (props) => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        if (user.name && user.username && user.email && user.division && user.message) {
+        if (user.name && user.username && user.email && user.division && user.gender && user.message ) {
             handleChange();
         }
         setUser(initUser);

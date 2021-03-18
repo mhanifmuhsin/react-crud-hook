@@ -10,7 +10,7 @@ const EditUserForm = (props) => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        if (user.name && user.username && user.email && user.division) props.updateUser(user);
+        if (user.name && user.username && user.email && user.division && user.gender && user.message) props.updateUser(user);
     }
     return (
         <div className="container">

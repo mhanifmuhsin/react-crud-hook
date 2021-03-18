@@ -1,11 +1,11 @@
-// Sample Data Object of Array
+// Sample Data 
 
 const userList =[
     {
         id:1,
         name: 'Dimas Maryanto',
         username: 'dimas',
-        email: 'dimmaryanto@gmail.com',
+        email: 'dimasxxxx@gmail.com',
         division: 'Back End Developer',
         gender: 0,
         message : 'Yes',
@@ -16,7 +16,7 @@ const userList =[
         id:2,
         name: 'Riansyah PP',
         username: 'rian',
-        email: 'rianpp@gmail.com',
+        email: 'rianxxxx@gmail.com',
         division: 'Database Administrator',
         gender: 0,
         message : 'Yes',
